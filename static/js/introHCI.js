@@ -32,5 +32,6 @@ function projectClick(e) {
        $(containingProject).append("<div class='project-description'><p>Aha!</p></div>");
     } else {
        $(description).fadeOut("slow");
+       $(this).fadeToggle();
     }
 }
