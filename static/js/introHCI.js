@@ -29,7 +29,7 @@ function projectClick(e) {
     var containingProject = $(this).closest(".project");
     var description = $(containingProject).find(".project-description");
     if (description.length == 0) {
-       $(containingProject).append("<div class='project-description'><p>Aha!</p></div>");
+       $(containingProject).append("<div class='project-description'><p>You should click again!</p></div>");
     } else {
        $(description).fadeOut("slow");
        $(this).fadeToggle();
